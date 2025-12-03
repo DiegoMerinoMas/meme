@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Outcomes - Defensa de Tesis</title>
+    <style>
+        :root {
+            --primary-color: #0056b3; /* Azul Ingeniería */
+            --accent-color: #e3f2fd;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --card-bg: #ffffff;
+            --success-color: #2e7d32;
+            --tip-bg: #fff9c4;
+            --tip-border: #fbc02d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+
+        /* Estilos del Acordeón */
+        details {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        details[open] {
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            background-color: var(--card-bg);
+            list-style: none; /* Ocultar flecha por defecto */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Flecha personalizada */
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #999;
+            transition: transform 0.2s;
+        }
+
+        details[open] summary::after {
+            content: '-';
+            color: var(--primary-color);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .content {
+            padding: 0 20px 20px 20px;
+            border-top: 1px solid #eee;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        /* Estilos internos del contenido */
+        h3 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            color: #666;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        /* Estilo especial para la tarjeta de TIP */
+        .tip-card {
+            background-color: var(--tip-bg);
+            border: 2px solid var(--tip-border);
+        }
+
+        .tip-card summary {
+            background-color: var(--tip-bg);
+            color: #827717;
+        }
+        
+        .tip-card .content {
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Outcomes</h1>
+        <p class="subtitle">Guía de defensa móvil | Proyecto Tesis IA</p>
+    </header>
+
+    <details>
+        <summary>SO1: Resolución de Problemas</summary>
+        <div class="content">
+            <p><em>Capacidad para identificar, formular y resolver problemas complejos aplicando ingeniería.</em></p>
+            
+            <h3>Identificación</h3>
+            <ul>
+                <li><strong>Brecha Crítica:</strong> Basada en datos duros (ENLA 2024: solo 13.7% éxito).</li>
+                <li><strong>Diagnóstico:</strong> El problema no es la capacidad del alumno, sino la falta de personalización del método tradicional.</li>
+            </ul>
+
+            <h3>Formulación</h3>
+            <ul>
+                <li><strong>Solución Tecnológica:</strong> Escalar tutoría personalizada masiva sin miles de profesores mediante automatización con IA.</li>
+            </ul>
+
+            <h3>Resolución (Ingeniería)</h3>
+            <ul>
+                <li><strong>Arquitectura:</strong> Patrón Monolito Modular.</li>
+                <li><strong>Algoritmos:</strong> Diseño de motor de Prompt Engineering. No es una "caja negra"; inyectas variables (<em>difficulty_level, competency_id</em>) para lograr adaptabilidad matemática.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>SO2: Diseño de Ingeniería</summary>
+        <div class="content">
+            <p><em>Diseñar soluciones considerando factores globales, culturales, sociales y económicos.</em></p>
+
+            <h3>Diseño Centrado en Necesidades</h3>
+            <ul>
+                <li><strong>UX/UI Específica:</strong> Niños 11-12 años (operaciones concretas).</li>
+                <li><strong>Validación:</strong> User Personas y Wireframes.</li>
+            </ul>
+
+            <h3>Factores Clave</h3>
+            <ul>
+                <li><strong>Económico:</strong> Análisis ROI (Cap. 3). Arquitectura Cloud es más sostenible que servidores físicos en cada colegio.</li>
+                <li><strong>Social/Cultural:</strong> Adaptado a Colegios Estatales (gama baja, conexión inestable). Democratización de tecnología.</li>
+                <li><strong>Bienestar:</strong> Reducción de Ansiedad Matemática mediante gamificación positiva.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>SO3: Comunicación Efectiva</summary>
+        <div class="content">
+            <p><em>Comunicarse efectivamente con diversos públicos.</em></p>
+
+            <h3>Adaptación al Público</h3>
+            <ul>
+                <li><strong>Académico:</strong> Full Paper con estándares científicos y referencias actuales (Scaria, Dondio).</li>
+                <li><strong>Técnico:</strong> Diagramas C4 y documentación de API.</li>
+                <li><strong>Usuario (Niños):</strong> Lenguaje empático, mascota virtual, feedback sin castigo ("¡Casi lo logras!").</li>
+                <li><strong>Stakeholder:</strong> Reportes de gestión (costos, cronogramas) para viabilidad.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>SO4: Ética Profesional</summary>
+        <div class="content">
+            <p><em>Responsabilidades éticas y decisiones informadas considerando el impacto.</em></p>
+
+            <h3>Acciones Concretas</h3>
+            <ul>
+                <li><strong>Ética de Datos:</strong> Seguridad (HTTPS, BCrypt, TDE en Azure) cumpliendo Ley N° 29733 (Privacidad de Menores).</li>
+                <li><strong>Seguridad de IA:</strong> Restricción de "creatividad" (Temperatura 0.1) para evitar alucinaciones. Decisión ética: seguridad pedagógica sobre novedad.</li>
+                <li><strong>Impacto Social:</strong> Equidad. Reducción de desigualdad al llevar tecnología de punta a escuelas públicas.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>SO5: Trabajo en Equipo</summary>
+        <div class="content">
+            <p><em>Liderazgo, colaboración y ambiente colaborativo.</em></p>
+
+            <h3>Dinámica de Equipo</h3>
+            <ul>
+                <li><strong>Metodología:</strong> Scrum (Sprints, Dailies, Jira).</li>
+                <li><strong>Colaboración:</strong> División clara (Backend vs Frontend, QA) usando Git/GitHub para integración continua.</li>
+                <li><strong>Liderazgo:</strong> Gestión de relación con stakeholders (docentes/asesores) para validar hitos 1 al 12.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>SO6: Experimentación</summary>
+        <div class="content">
+            <p><em>Desarrollar experimentación, analizar datos y sacar conclusiones.</em></p>
+
+            <h3>Proceso Científico</h3>
+            <ul>
+                <li><strong>Experimentación:</strong> Protocolo validado con 28 estudiantes (entorno controlado).</li>
+                <li><strong>Análisis:</strong> Encuestas Likert, promedios (4.66/5.00), gráficos estadísticos.</li>
+                <li><strong>Juicio de Ingeniería:</strong> Interpretación del dato bajo en íconos (4.53) -> Conclusión: La interfaz requiere ser más "esqueuomórfica". Interpretación para mejora continua.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>SO7: Aprendizaje Continuo</summary>
+        <div class="content">
+            <p><em>Adquirir y aplicar nuevos conocimientos de forma autónoma.</em></p>
+
+            <h3>Auto-aprendizaje</h3>
+            <ul>
+                <li><strong>Nuevas Tecnologías:</strong> Azure AI Foundry y Prompt Engineering (Tecnologías 2023-2024 no enseñadas en currículo estándar).</li>
+                <li><strong>Investigación:</strong> Estado del arte (Paper Scaria 2024, Nebula 2023) para aprender mejores prácticas.</li>
+                <li><strong>Adaptación:</strong> Despliegue en nube (Azure Spring Apps) y arquitecturas modernas.</li>
+            </ul>
+        </div>
+    </details>
+
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 30px 0;">
+
+    <details class="tip-card" open>
+        <summary>💡 Tip para la Defensa</summary>
+        <div class="content">
+            <p>Si te preguntan por los "Student Outcomes", <strong>no recites la definición</strong>. Conecta el concepto con tu acción:</p>
+            <blockquote style="border-left: 4px solid #fbc02d; padding-left: 15px; background: #fff; padding: 10px; margin: 10px 0; font-style: italic;">
+                "Respecto al <strong>SO4 (Ética)</strong>, lo aplicamos rigurosamente al configurar los guardrails de la IA para proteger a los menores. <br><br>
+                Y para el <strong>SO6 (Experimentación)</strong>, nuestra prueba piloto con 28 alumnos nos dio la data cuantitativa necesaria para validar la arquitectura."
+            </blockquote>
+            <p>Esto demuestra que interiorizaste los conceptos.</p>
+        </div>
+    </details>
+
+    <footer>
+        <p>Generado para repaso rápido - Optimizado para Móvil</p>
+    </footer>
+
+</body>
+</html>
